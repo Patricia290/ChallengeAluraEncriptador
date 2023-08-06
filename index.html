@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es"> <!--Idioma de la página-->
+
+    <head>
+
+        <meta charset="UTF-8"> <!--identifica el diccionario-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Compatibilidad con PC y dispositivos móviles-->
+        <title>Encriptador Alura</title> <!--Titulo de la página-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!--linquea mi html a la pagina de estilos css-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Link de configuración de la fuente-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header> <!--Encabezado-->
+            <img class="logo" src="imagenes/Logo.png" alt="logo Alura">
+        </header>
+        <main>
+            <section class="sector-1">
+                <div class="area-texto"> 
+                    <textarea class="texto" name="texto" cols="30" rows="10" placeholder="Ingrese aquí el texto"></textarea> <!--Cuadro de Texto-->
+                </div>
+                <div class="aviso">
+                    <img src="imagenes/exclamation-circle.svg">
+                    <p>Ingresar solamente letras minúsculas, sin acentos o caracteres especiales.</p>  <!--pequeño texto antes de las 2 secciones"-->
+                </div>
+                <div class="botones"> <!--Se crea un div, para separar los 2 botones y hacer más ordenado nuestro código-->
+                    <button class="btn-encriptar" type="button" onclick="btnEncriptar()"> Encriptar</button> 
+                    <button class="btn-desencriptar" type="button" onclick="btnDesencriptar()"> Desencriptar</button>
+                </div>
+            </section>
+            <section class="sector-2">
+                <div class="area-encriptada">
+                    <textarea class="mensaje" name="desencriptador" cols="20" rows="10"></textarea>
+                    <img class="imagen-gato" src="imagenes/Gato.png" alt="gato frente al PC">
+                    <p class="info-imagen"> <a href="https://www.freepik.com/free-vector/cute-cat-computer-cartoon-icon-illustration-animal-technology-icon-concept-isolated-flat-cartoon-style_13417973.htm#query=draw%20cat%20curious%20pc&position=3&from_view=search&track=ais">Image by catalyststuff</a> on Freepik</p> 
+                    <h2>Ningún mensaje fue encontrado.</h2>
+                    <h3>Ingrese el texto que desees encriptar o desencriptar.</h3>
+                </div>
+                <div class="btn-copiar"> 
+                    <button class="copiar" type="button" onclick="copiarTexto()"> Copiar mensaje</button>
+                </div>
+            </section>
+        </main>
+        <footer> <!--rrss, parrafo. rrss-->
+           <p><a href="https://linkedin.com/in/patriciaortizamos"><img src="imagenes/li.png" alt="LinkedIn" width=3% height="auto"></a> &copy; 2023 by P@tricia Ortiz Ramos para Alura Challenger I G5 <a href="https://github.com/Patricia290"><img src="imagenes/gh.png" alt="GitHub"width=3% height="auto"></a></p>
+        </footer>          
+        <script src="script.js">
+        </script>
+    </body>
+</html>
